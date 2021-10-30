@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+header {
+    padding: 3vh 5vw 0 5vw;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 177px;
+}
+
+.containerHeader {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.headerNotFixed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.maxWidthOfContainer {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.headerfixed {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px 5vw;
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    margin: 39px 0 39px 0;
+    max-width: 300px;
+    width: 100%;
+}
+
+#FormularioDeBusqueda {
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.inputForm {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid transparent;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    height: 55px;
+    padding: 15px 10px;
+}
+.inputForm{
+    border-radius: 16px 0 0 16px;
+}
+
+.inputForm:focus-visible {
+    border: none;
+    outline: none;
+    border-bottom: rgba(0, 0, 0, 1) solid 1px;
+}
+
+.form>input:first-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    width: 120px;
+    max-width: 138px;
+}
+
+.form>input:nth-child(2) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100px;
+    max-width: 100px;
+}
+
+.botonDeInicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    height: 55px;
+    padding: 15px;
+}
+
+.form>button>img {
+    height: 20px;
+    width: 20px;
+}
+
+.headerOfSearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.headerOfSearch>p {
+    font-size: 12px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.headerOfSearch>button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: fit-content;
+}
+
+.headerOfSearch>button>img {
+    width: 15px;
+    height: 15px;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    margin: 39px 0 39px 0;
+    width: 100%;
+}
+
+.form-group>input {
+    border-radius: 0 0 16px 16px;
+}
+
+.formulario>button:active {
+    background-color: rgba(235, 87, 87, 1);
+}
+
+.labelDelFormulario, #location, #gests {
+    padding: 10px 26px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.labelDelFormulario {
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.Locations {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+
+.btn-location {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.btn-location>img {
+    height: 19px;
+}
+
+.btn-location>p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.btn {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 16px 15px;
+}
+
+.btnSearch {
+    background-color: transparent;
+    width: 100%;
+}
+
+.btnSearchDeFiltros {
+    background: rgba(235, 87, 87, 0.9);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 126px;
+}
+
+.btnSearch>img, .btnSearchDeFiltros>img {
+    height: 20px;
+}
+
+.btnSearchDeFiltros>img {
+    padding-right: 10px;
+}
+
+@media (min-width: 450px) {
+    header {
+        min-height: 100px;
+    }
+    .maxWidthOfContainer {
+        width: 100px;
+    }
+    .headerNotFixed {
+        justify-content: space-between;
+    }
+    .form-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .labelDelFormulario, #location, #gests {
+        box-sizing: border-box;
+    }
+    .labelDelFormulario {
+        display: flex;
+        align-items: center;
+        min-width: 50px;
+        width: 20%;
+    }
+    #location, #gests {
+        width: 80%;
+        max-width: 100%;
+    }
+    #location {
+        border-radius: 0 16px 0 0;
+    }
+    #gests {
+        border-radius: 0 0 16px 0;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .formulario{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .form-group{
+        border-radius: 16px 0 0 16px;
+        width: 80%;
+    }
+    .labelDelFormulario {
+        width: 15%;
+    }
+    .labelDelFormulario:first-child{
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-right: none;
+        border-radius: 16px 0 0 16px;
+    }
+    
+    #location, #gests {
+        width: 35%;
+        max-width: 100%;
+    }
+    #location {
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-left: none;
+        border-radius: 0 16px 16px 0;
+    }
+    #gests {
+        border-radius: 0 0 16px 0;
+    }
+    .Locations{
+        order: 3;
+        width: 100%;
+    }
+    .btnSearchDeFiltros{
+        order: 2;
+        width: 20%;
+        box-sizing: border-box;
+    }
+}
