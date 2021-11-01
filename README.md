@@ -1,6 +1,7 @@
 # Windbnb
  Esta es una pagina creada con react.js y un archivo JSON que contiene la informacion de los lugares que se encuentran en ella.
  Fue creada con create-react-app.
+ Si quieres verla puedes visitar el siguiente link [Windbnb](https://windbnbcloneairbnb.netlify.app)
 ### En ella se encuentran los siguientes componentes:
 - Header
 - StayItem
